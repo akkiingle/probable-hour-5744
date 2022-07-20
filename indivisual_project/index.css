@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar{
+    /* border: 1px solid red; */
+    background-color:#10847e;
+    font-family:"Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+#navbar>div:nth-child(1){
+    display: flex;
+    justify-content: left;
+    gap: 50px;
+    padding: 10px 20px 10px 30px;
+    
+}
+#navbar>div:nth-child(1)>input{
+width: 900px;
+border-radius: 10px;
+border: transparent;
+padding-left: 30px;
+font-size: 16px;
+line-height: 21px;
+}
+#navbar>div>img{
+    width: 165px;
+    height: 50px;
+}
+#bottom{
+    display: flex;
+    padding-left: 240px;
+    padding-right: 50px;
+    color: aliceblue;
+    justify-content: space-between;
+}
+
+#left{
+    /* border: 1px solid blue; */
+    display: flex;
+    gap: 20px;
+}
+#right{
+    /* border: 1px solid yellow; */
+    display: flex;
+    gap: 40px;
+}
+#bottom a{
+    margin-bottom: 10px;
+margin-top: 10px;
+color: aliceblue;
+text-decoration: none;
+line-height: 21px;
+}
+
+#right img{
+    margin-bottom: -5px;
+}
+
+/* crouser section */
+
+#crouserContainer{
+/* border: 1px solid red; */
+position: relative;
+}
+#crouserContainer>button{
+    height: 98%;
+    width: 70px;
+    color: aliceblue;
+border: transparent;
+
+
+}
+#leftBtn{
+    /* height: 50px; */
+    position:absolute;
+    left: 1px;
+    font-size: 60px;
+    background-color: rgba(100,100,100,.3);
+}
+#rightBtn{
+    /* height: 50px; */
+    position:absolute;
+    right: 1px;
+    font-size: 60px;
+    background-color: rgba(100,100,100,.3);
+}
+#Crouse{
+    width: 100%;
+}
+
+/* container1 */
+#container1{
+    font-family: "Open Sans", sans-serif;;
+    /* height: 150px; */
+    display: grid;
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+#container1>div{
+    border: 1px solid rgb(42, 42, 53);
+    height: 192px;
+    position: relative;
+    border-radius: 10px;
+}
+#container1>div>div{
+    /* border: 1px solid yellow; */
+    height: 115px;
+    border-radius: 10px 10px 0px 0px;
+}
+#container1>div:nth-child(1)>div{
+    background-color: rgba(53,194,169,.24);
+}
+#container1>div:nth-child(2)>div{
+    background-color: #fdf2d2;
+}
+#container1>div:nth-child(3)>div{
+    background-color: #d6f0ff;
+}
+#container1 img{
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#container1 p{
+    background-image: url(https://assets.pharmeasy.in/web-assets/dist/1602b4ce.svg);
+    width: 145px;
+    height: 20px;
+    color: aliceblue;
+    border-radius: 10px 0px 0px 0px;
+    
+}
+#container1 h1{
+    margin: 18px 0px 10px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color:  #4F585E;
+
+}
+#container1 button{
+    margin: 15px 0px 0px 20px;
+    height: 45px;
+    width: 138px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 0px;
+    color: aliceblue;
+}
+#container1>div:nth-child(1)>button{
+    background-color: #3BB896;
+}
+#container1>div:nth-child(2)>button{
+    background-color: #FC8019;
+}
+#container1>div:nth-child(3)>button{
+    background-color: #00B9E1;
+}
+
