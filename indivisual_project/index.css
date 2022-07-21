@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: "Open Sans", sans-serif;
 }
 
 #navbar{
@@ -93,7 +94,7 @@ border: transparent;
 
 /* container1 */
 #container1{
-    font-family: "Open Sans", sans-serif;;
+    
     /* height: 150px; */
     display: grid;
     width: 95%;
@@ -164,5 +165,200 @@ border: transparent;
 }
 #container1>div:nth-child(3)>button{
     background-color: #00B9E1;
+}
+
+/* Banner */
+
+#banner{
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    
+}
+#banner>div{
+    display: flex;
+    height: 94px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    padding: 0px 10px 0px 30px;
+    background-color: #a291fa;
+    border-radius: 10px;
+    background-image:url(https://assets.pharmeasy.in/web-assets/dist/f5c40209.svg);
+}
+#banner>div>div{
+    width: 775px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    color: aliceblue;
+    margin: 15px 0px 0px 50px;
+}
+#banner>div>img{
+    height: 60%;
+    width: 15%;
+    
+}
+#banner>div>img:nth-child(3){
+    width: 170px;
+    height: 140px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* Offer just for you */
+
+#OfferForYou{
+    /* border: 1px solid red; */
+    width: 95%;
+    height: 167px;
+    margin: auto;
+    margin-top: 70px;
+    
+}
+#OfferTop{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+#OfferTop>div{
+    display: flex;
+    align-items: center;
+}
+#OfferTop>div>p{
+margin-left: 20px;
+}
+#OfferTop>div+div{
+    gap: 30px;
+    align-items: center;
+}
+#OfferTop>div+div>p{
+    color: #3BB896;
+}
+#OfferTop>div+div>div{
+    transform: rotateY(180deg);
+}
+
+/* offerbottom */
+
+#OfferBottom{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+#OfferBottom>div{
+    border: 1px solid rgb(185, 175, 175);
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    height: 100px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#OfferBottom>div>div:nth-child(2){
+    /* border: 1px solid red; */
+    width: 200px;
+    line-height: 22px;
+    
+}
+#OfferBottom>div img{
+    width: 60px;
+    height: 60px;
+}
+
+/* Featured Brands */
+
+#Featured-Brands{
+    /* border: 1px solid red; */
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+}
+#Featured-Brands>h1{
+    font-size: 20px;
+    font-weight:700;
+    line-height: 30px;
+    color: #4F585E;
+}
+#Brands{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    /* height: 150px; */
+    gap: 15px;
+}
+#Brands>div{
+    height: 210px;
+    margin-top: 20px;
+}
+#Brands img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* health articles */
+
+#Health-Articles{
+    /* border: 1px solid red; */
+    width: 95%;
+    margin: auto;
+    margin-top: 60px;
+}
+#Health-Articles>h1{
+    font-size: 20px;
+    font-weight: 700;
+    line-height:30px;
+    color: #4F585E;
+    display: block;
+}
+
+#Health-ArticlesContent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+#Health-ArticlesContent img{
+    width: 100%;
+    height: 230px;
+    border-radius: 10px;
+}
+#Health-ArticlesContent>div>p:nth-child(2){
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #4F585E;
+    margin: 15px 0 0 0;
+    overflow: hidden;
+}
+#Health-ArticlesContent>div>div{
+    font-size: 14px;
+    line-height: 21px;
+    color: #4F585E;
+    height: 42px;
+    margin:10px 0px 5px 0px ;
+    overflow: hidden;
+
+}
+#Health-ArticlesContent>div>p:nth-child(4){
+    font-size: 14px;
+    font-weight: 600;
+    line-height:17.5px;
+    color: #10847E;
 }
 
