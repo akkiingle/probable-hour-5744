@@ -74,3 +74,115 @@ data1.forEach(function(ele){
     div1.append(div2,img,button)
     container1.append(div1);
 })
+
+// offer just for you 
+
+let data2=[
+    {img:"https://cms-contents.pharmeasy.in/offer/37c262d84a5-25.jpg?dim=60x0&dpr=1.3249999284744263&q=100",
+    p1:"Flat 25% OFF",
+    code:"Code: GIFT25",
+    },
+    {img:"https://cms-contents.pharmeasy.in/offer/81308cc59b5-FLAT_20.jpg?dim=60x0&dpr=1.3249999284744263&q=100",
+    p1:" Test-Flat 20% OFF + ut to Rs.1000 surprise cashback",
+    code:"Code: MEGA20",
+    },
+    {img:"https://cms-contents.pharmeasy.in/offer/9504ed92881-flat22offer.jpg?dim=60x0&dpr=1.3249999284744263&q=100",
+    p1:"Flat 22% OFF + up to Rs.1000 surprise cashback",
+    code:"Code: 22MEDI",
+    },
+    {img:"https://cms-contents.pharmeasy.in/offer/2846076d5d2-Diagnostics-10-min.png?dim=60x0&dpr=1.3249999284744263&q=100",
+    p1:"Order medicines and get Flat 400 OFF on...",
+    code:"Code: CARE4U",
+    },
+]
+
+let BottomContainer=document.querySelector("#OfferBottom");
+
+data2.forEach(function(ele){
+    let div1=document.createElement("div");
+    let div2=document.createElement("div");
+    let div3=document.createElement("div");
+
+    let image=document.createElement("img");
+    image.src=ele.img;
+
+    let p1=document.createElement("p");
+    p1.innerText=ele.p1;
+
+    let code=document.createElement("p");
+    code.innerText=ele.code;
+
+    div2.append(image);
+    div3.append(p1,code);
+    div1.append(div2,div3);
+    BottomContainer.append(div1);
+});
+
+// Featured Brands
+
+let data3=[
+    "https://cms-contents.pharmeasy.in/carousel_item/1f27723d1f3-Glucon-D.jpg?dim=146x0&dpr=1.3249999284744263&q=100",
+    "https://cms-contents.pharmeasy.in/carousel_item/7326ee948ff-web_Himalaya.jpg?dim=146x0&dpr=1.3249999284744263&q=100",
+    "https://cms-contents.pharmeasy.in/carousel_item/d5f9240e29a-SUGARFREE.png?dim=146x0&dpr=1.3249999284744263&q=100",
+    "https://cms-contents.pharmeasy.in/carousel_item/c572570b5ce-Liveasy.jpg?dim=146x0&dpr=1.3249999284744263&q=100",
+    "https://cms-contents.pharmeasy.in/carousel_item/c72feb4bd7a-web_Huggies.jpg?dim=146x0&dpr=1.3249999284744263&q=100",
+    "https://cms-contents.pharmeasy.in/carousel_item/729f07d6c49-04.jpg?dim=146x0&dpr=1.3249999284744263&q=100",
+    "https://cms-contents.pharmeasy.in/carousel_item/2d987111a15-Featured-banner_Revital.png?dim=146x0&dpr=1.3249999284744263&q=100",
+    "https://cms-contents.pharmeasy.in/carousel_item/ac01791d842-Featured-banner_Volini.png?dim=146x0&dpr=1.3249999284744263&q=100"
+];
+
+let brandContainer=document.querySelector("#Brands");
+
+data3.forEach(function(ele){
+  let div = document.createElement("div");
+
+  let image = document.createElement("img");
+  image.src = ele;
+
+    div.append(image);
+    brandContainer.append(div);
+});
+
+// Health Articles
+
+let data4=[
+    {image:"https://blog-images.pharmeasy.in/2022/07/18132435/Blog-Image-18-july-01.jpg?dim=0x230&dpr=1.3249999284744263&q=100",
+    heading:"What Is Syphilis? Read This Blog To Know More",
+    p1:"Table of Contents Stages of SyphilisWhat causes Syphilis?Risk factors of SyphilisWhat signs do you have of Syphilis?How does Syphilis get treated?How can Syphilis be prevented? Syphilis is A potentially fatal sexually transmitted infection(STI). It can be transmitted through sexual or close contact with an infected person. Syphilis, if left untreated, can cause blindness, heart problems.",
+    p2:"Read More >"},
+    {image:"https://blog-images.pharmeasy.in/2022/07/18143950/Blog-Image-18-july-02.jpg?dim=0x230&dpr=1.3249999284744263&q=100",
+    heading:"All You Need To Konw About Common sexually Trans..",
+    p1:"Table of Contents What causes sexually transmitted diseases?Common STD symptomsHIV/AIDSGenital herpesChlamydiaSyphilisVaginal candidiasisPredisposed persons are females with–Symptoms include–Conclusion Sexually transmitted diseases or STDs are diseases that spread from person to person via sexual intercourse or contact. In other words, these infections or diseases can spread through vaginal, anal or even oral sex. However, the spreading of ",
+    p2:"Read More >"
+    },
+    {image:"https://blog-images.pharmeasy.in/2022/07/18013014/18.jpg?dim=0x230&dpr=1.3249999284744263&q=100",
+    heading:"Best Home Remedies For Thick Eyebrows",
+    p1:"Table of Contents Introduction:&nbsp;What Causes Thin Eyebrows?Symptoms of Thin Eyebrows:Home Remedies for Thick Eyebrows:When to Seek Medical Help?Conclusion:Frequently Asked Questions:References: Introduction:&nbsp; Eyebrows are like the crowns of our eyes. They are not accessories; they play an important role in preventing sweat from trickling down into our eyes. In addition, they also protect the bony ridges ",
+    p2:"Read More >"
+    }
+];
+
+
+let HealthContainer=document.querySelector("#Health-ArticlesContent");
+
+data4.forEach(function(ele){
+let div=document.createElement("div");
+
+let image=document.createElement("img");
+image.src=ele.image;
+
+let heading=document.createElement("p");
+heading.innerText=ele.heading;
+
+let div2=document.createElement("div");
+
+let p1=document.createElement("p"); 
+p1.innerText=ele.p1;
+
+let p2=document.createElement("p"); 
+p2.innerText=ele.p2;
+
+div2.append(p1)
+div.append(image,heading,div2,p2);
+HealthContainer.append(div);
+});
