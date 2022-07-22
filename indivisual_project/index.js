@@ -186,3 +186,88 @@ div2.append(p1)
 div.append(image,heading,div2,p2);
 HealthContainer.append(div);
 });
+
+
+// why choose us
+
+let data5=[
+    {image:"https://assets.pharmeasy.in/web-assets/dist/4d2f7c48.svg",
+    heading:"32 Million+",
+    p:"Registered users as of Mar 31, 2022"},
+    {image:"https://assets.pharmeasy.in/web-assets/dist/92c372bb.svg",
+    heading:"36 Million+",
+    p:"Orders on Pharmeasy till date"},
+    {image:"https://assets.pharmeasy.in/web-assets/dist/773ae9c5.svg",
+    heading:"99000+",
+    p:"Unique item sold last 3 months"},
+    {image:"https://assets.pharmeasy.in/web-assets/dist/773ae9c5.svg",
+    heading:"19500+",
+    p:"Pin codes serviced last 3 months"}
+];
+
+let whyChooseContainer=document.querySelector("#WhyChoose-UsContent");
+
+data5.forEach(function(ele){
+    let div=document.createElement("div");
+
+    let image=document.createElement("img");
+    image.src=ele.image;
+
+    let p1=document.createElement("p");
+    p1.innerText=ele.heading;
+
+    let p2=document.createElement("p");
+    p2.innerText=ele.p;
+
+    div.append(image,p1,p2);
+    whyChooseContainer.append(div);
+})
+
+// What our customers have to say
+
+let data6=[
+    {h1:"Debanjan Roy",
+    date:"April 18, 2020",
+    image:"https://assets.pharmeasy.in/web-assets/dist/d29d41d8.svg",
+    description:"Excellent experience. Pharmeasy has not let it's customers down during lockdown. Thanks team. Great job. The application is also very smooth. And does its job well with an attractive UI and easy to use features. Good job developer."
+    },
+    {h1:"Rohini Sarkar",
+    date:"April 21, 2020",
+    image:"https://assets.pharmeasy.in/web-assets/dist/d29d41d8.svg",
+    description:"Very helpful and friendly app in terms of usability, customer support &amp; money saving from the point of medical necessity of every person."
+    },
+    {h1:"Varun Sonagra",
+    date:"April 23, 2020",
+    image:"https://assets.pharmeasy.in/web-assets/dist/d29d41d8.svg",
+    description:"I've had a good experience. The consultation with a doctor feature works well too. The prices and discounts are great too. Overall the simplicity of the app is a plus too. I recommend this app. Will always be a customer/user now! Genuinely!"
+    },
+    {h1:"Rajarshi Sarkar",
+    date:"April 22, 2020",
+    image:"https://assets.pharmeasy.in/web-assets/dist/d29d41d8.svg",
+    description:"The app is really wonderful. Being a Product Manager myself, I would say that the User experience (UI/UX) of the app is top notch (easy to use, simple and convenient). Coming to services and delivery, I would say Pharmeasy is doing a tremendous job even during this unprecedented pandemic situation."
+    }
+];
+
+let customerContainer=document.querySelector("#CustomersContent");
+
+data6.forEach(function(ele){
+    let div=document.createElement("div");
+
+    let h1=document.createElement("h1");
+    h1.innerText=ele.h1;
+
+    let p1=document.createElement("p");
+    p1.innerText=ele.date;
+
+    let div1=document.createElement("div");
+
+    let image=document.createElement("img");
+    image.src=ele.image;
+
+    let p2=document.createElement("p");
+    p2.innerText=ele.description;
+
+    div1.append(image,p2);
+    div.append(h1,p1,div1);
+    customerContainer.append(div);
+})

@@ -9,6 +9,9 @@
     background-color:#10847e;
     font-family:"Open Sans", sans-serif;
     font-size: 16px;
+    position: sticky;
+    z-index: 10;
+    top: 0px;
 }
 
 #navbar>div:nth-child(1){
@@ -59,6 +62,7 @@ line-height: 21px;
 #right img{
     margin-bottom: -5px;
 }
+
 
 /* crouser section */
 
@@ -362,3 +366,138 @@ margin-left: 20px;
     color: #10847E;
 }
 
+/* Why Choose us */
+
+#WhyChoose-Us{
+    /* border: 1px solid red; */
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+}
+#WhyChoose-Us>h1{
+    font-size:20px;
+    font-weight: 700;
+    line-height: 21px;
+    margin-bottom: 10px;
+    color: #4F585E;
+    margin-bottom: 20px;
+}
+
+#WhyChoose-UsContent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#WhyChoose-UsContent>div>p:nth-child(2){
+    font-size: 14px;
+    font-weight: 700;
+    line-height:21px;
+    color: #4F585E;
+    margin-top: 20px;
+}
+#WhyChoose-UsContent>div>p:nth-child(3){
+    font-size:18px;
+    font-weight: 600;
+    line-height:23px;
+    color: #4F585E; 
+    margin-top: 10px;
+}
+
+/* What our customers  have to say */
+
+#customers{
+    /* border: 1px solid red; */
+    width: 95%;
+    margin: auto;
+    margin-top: 60px;
+}
+#customers>h1{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #4F585E;
+}
+
+#CustomersContent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* border: 1px solid blue; */
+    margin-top: 20px;
+    gap: 20px;
+}
+
+#CustomersContent>div>h1{
+    font-size: 14px;
+    font-weight: 700;
+    line-height:17.5px;
+    color: #4F585E;
+}
+#CustomersContent>div>h1+p{
+    font-size: 14px;
+    line-height: 17.5px;
+    color: #8897A2;
+}
+
+#CustomersContent>div>div{
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    background-color: #f2fff8;
+    padding: 20px 20px;
+    height: 176px;
+    /* width: 320px; */
+}
+
+#CustomersContent>div>div>p{
+    font-size: 12px;
+    line-height:15px;
+    color: #4f585e;
+    margin: 10px 0 0 0;
+}
+
+/* download app section */
+
+#Download{
+    display: flex;
+    margin-top: 60px;
+    background-color: #f2f5f5;
+    justify-content: space-between;
+    height: 340px;
+}
+#Download>div:nth-child(1){
+    width: 580px;
+    padding: 60px;
+    height: 220px;
+
+}
+#Download h1{
+    font-size:26px;
+    font-weight:700;
+    line-height: 47px;
+    color: #4F585E;
+}
+#Download h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 43px;
+    color: #4F585E;
+    margin-top: 80px;
+}
+#Download>div{
+    height: 100%;
+    width: 485px;
+    /* border: 1px solid blue; */
+}
+ #Download>div+div>img{
+    width: 100%;
+    height: 100%;
+ }
+
+ #download-img{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;
+    width: 100%;
+ }
+ #download-img>img{
+    width: 170px;
+ }
