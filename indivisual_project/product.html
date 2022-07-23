@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    
+    <link rel="stylesheet" href="./Styles/product.css">
+    <link rel="stylesheet" href="./Styles/navbar.css">
+    </head>
+    <body>
+        <div id="navbar">
+            <div>
+                <a href="index.html">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="">
+                </a>
+                <input type="text" placeholder="Search medicine/Healthcare products" aria-label="Search">
+            </div>
+            <div id="bottom">
+                <div id="left">
+                    <a href="javascript:void(0)">Order Medicines</a>
+                    <a href="product.html">Healthcare Products</a>
+                    <a href="javascript:void(0)">Lab Tests</a>
+                    <a href="javascript:void(0)">RTPCR</a>
+                </div>
+                <div id="right">
+                    <a href="javascript:void(0)">
+                        <img src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg" alt="">
+                        <span>Offers</span>
+                    </a>
+                    <a href="Signup.html">
+                        <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" alt="">
+                        <span>Login/Signup</span>
+                    </a>
+                    <a href="Cart.html">
+                        <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg" alt="">
+                        <span>Cart</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <select id="sortPrice">
+          <option value="*">Sort by Price</option>
+          <option value="High to Low">High to Low</option>
+          <option value="Low to High">Low to High</option>
+        </select>
+        <select id="sortName">
+          <option value="*">Sort by Name</option>
+          <option value="A - Z">A - Z</option>
+          <option value="Z - A">Z - A</option>
+        </select>
+        <div id="container">
+            <!-- element added from js -->
+        </div>
+    </body>
+    <script src="./Scripts/product.js"></script>
+</html>

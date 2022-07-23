@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#signnav{
+    background-color: #10847e;
+    text-align: center;
+    
+}
+#signnav>img{
+    /* border: 1px solid red; */
+    width: 200px;
+    margin-left: 27%;
+    margin: 0 0 0 0;
+ 
+}
+
+/* signin css */
+#container{
+    width: 30%;
+    margin: auto;
+    margin-top: 40px;
+}
+#container>div{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    /* background-color: darkgray; */
+}
+input{
+    width: 98%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 0.5px solid gray;
+    padding-left: 10px;
+}
+input:last-child{
+    width: 150px;
+    margin-left: 120px;
+    padding: 0;
+    text-align: center;
+    background-color: #10847e;
+    color: aliceblue;
+    
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+span{
+    margin-left: 210px;
+    color: dodgerblue;
+}
