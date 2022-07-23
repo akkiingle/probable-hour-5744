@@ -1,3 +1,22 @@
+let signinLS=JSON.parse(localStorage.getItem("signin"));
+    
+    document.querySelector("#left>a:nth-child(2)").addEventListener("click",function(){
+        if(signinLS!=undefined){
+        window.location.href="product.html"
+        }else{
+        alert("Please Login to Your Account")
+        }
+    })
+    
+    document.querySelector("#right>a:nth-child(3)").addEventListener("click",function(){
+        if(signinLS!=undefined){
+        window.location.href="Cart.html"
+        }else{
+        alert("Please Login to Your Account")
+        }
+    })
+
+
 let imageLinks=[
     "https://cms-contents.pharmeasy.in/banner/c414a98e027-dwebjpg.jpg?dim=1440x0&dpr=1&q=100",
     "https://cms-contents.pharmeasy.in/banner/3f636edf697-GRAND1000_Dweb.jpg?dim=1440x0&dpr=1&q=100",
